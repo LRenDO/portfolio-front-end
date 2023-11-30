@@ -1,0 +1,23 @@
+.cards ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*******************************************
+/* Desktop
+/*******************************************/
+@media screen and (min-width: 768px){
+    .cards ul {
+        flex-wrap: nowrap;
+    }
+
+    .grid ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto-fill, 1fr);
+        margin: 1rem;
+        border-radius: 0.5rem;
+    }
+
+}

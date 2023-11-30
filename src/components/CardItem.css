@@ -1,0 +1,37 @@
+.card li {
+    flex: 1 0 1;
+}
+
+.card img {
+    width: 100%;
+}
+
+/*******************************************
+/* Desktop
+/*******************************************/
+@media screen and (min-width: 768px){
+    .card {
+        padding: 1rem;
+        margin: 1rem;
+        border: solid 0.1rem var(--dark); /*TODO DELETE*/
+        border-radius: 0.8rem;
+    }
+
+    .grid .card {
+        border-radius: 0;
+        border: 0;
+    }
+
+    .grid li {
+        border-radius: 0;
+        border: 0;
+        border-top: 0.1rem solid var(--section-dark);
+        border-left: 0.1rem solid var(--section-dark);
+        &:nth-child(odd) {
+            border-left: none;
+        }
+        &:first-child, &:nth-child(2) {
+            border-top: none;
+        }
+    }
+}
